@@ -1,19 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <!-- eSTO ES EL CODIGO DE CARACTERES VIENE POR DEFECTO-->>
+    <!-- eSTO ES EL CODIGO DE CARACTERES VIENE POR DEFECTO-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- aHORA VOY A INCLUIR LA LIBRERIA, QUE ME VA A PERMITIR RESALTAR CODIGO FUENTE SIN TOCAR NADA MAS QUE CLASES EN LAS TAGS-->
-    <link rel="stylesheet" href="/assets/prism.css">
+    <link rel="stylesheet" href="prism.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <!-- Intentar con "./" para las direcciones, por si acaso -->
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Hello World</title>
 </head>
+
 <body>
     <nav>
-        <h3>Titulo</h3>
-        <a href="">Inicio</a>
-        <a href=""></a>
+        <h1>Titulo</h1>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Únete</a>
+        <a href="#">Ir al final</a>
     </nav>
-<script src="/assets/prism.js"></script>
+    <main class="container">
+        <!-- Pasando el texto a codigo html para representar los caracteres especiales(coma, tildes, comillas, signos etc e incluso emojis tambien) -->
+        <h1>El&nbsp;&ldquo;Hola&nbsp;Mundo&rdquo;</h1>
+        <!-- Ahora el contenido -->
+        <p dir="ltr"><span>El &ldquo;Hola Mundo&rdquo; (titulo de la pagina principal)</span></p>
+        <p dir="ltr"><span>Cualquier programador, aunque haya comenzado recientemente, se encuentra familiarizado con
+                esta frase, la habr&aacute; utilizado m&uacute;ltiples veces mientras aprend&iacute;a y hasta
+                tendr&aacute;n la costumbre de en cualquier ejemplo que hagan el utilizar estas famosas palabras.</span>
+        </p>
+        <p dir="ltr"><span>Siendo el ejemplo por excelencia, nosotros deseamos mostrarte como algo tan simple como una
+                frase se ha ido adaptando a cada tipo de lenguaje y en qu&eacute; forma ha ayudado a millones de
+                trabajadores a lo largo del mundo.</span></p>
+        <h3>El Hola Mundo en los lenguajes de programaci&oacute;n</h3>
+        <p dir="ltr"><span>La frase ha cobrado tanta popularidad hoy en d&iacute;a, que se pueden encontrar en internet
+                m&aacute;s de 441 programas con el resultado de &ldquo;hola mundo&rdquo;, en diversos lenguajes de
+                programaci&oacute;n desde los m&aacute;s famosos hasta varios desconocidos, y ha llegado a traducirse en
+                64 idiomas para estos lenguajes.</span></p>
+        <p><span style="font-weight: 400;">El hola mundo en los distintos Lenguajes de programaci&oacute;n:</span></p>
+        <!-- -------------------------------------------------------------------------------- -->
+
+        <!-- Codigo Fuente-->
+        <!-- Se usa la tag pre para decirle al browser(navegador) que no lo lea y que es una muestra nada mas -->
+        <!-- Y para el formato o la forma en que se va a mostrar es code -->
+        <!-- La librería prism.js nos dice que hay que poner esto nada mas class='lang-xxx' donde xxx es el lenguaje, que tambien lo dice en la pagina,el primero es java, y hay que ponerlo en pre -->
+        <h5>Java</h5>
+        <pre class="lang-j"><code>
+            java: public class HolaMundo {
+                &nbsp;&nbsp;&nbsp;public static void main(String[] args) {
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hola, Mundo");
+                &nbsp;&nbsp;&nbsp;}
+                }
+        </code></pre>
+        <h5>Python</h5>
+        <pre class="lang-py"><code>
+            python:&nbsp;print&nbsp;"Hola,&nbsp;Mundo&rdquo;&nbsp;
+        </code></pre>
+        <h5>Ruby</h5>
+        <pre class="lang-ruby"><code>
+            puts "Hola Mundo"
+        </code></pre>
+        <h5>Javascript</h5>
+        <pre class="lang-js"><code>
+            document.write('&iexcl;Hola, Mundo!');
+        </code></pre>
+        <h5>C</h5>
+        <pre class="lang-c"><code>
+            #include
+            #include
+                int main(void)
+                    printf("Hola, mundo\n");
+                    return EXIT_SUCCESS;
+        </code></pre>
+        <h5>C++</h5>
+        <pre class="lang-cpp"><code>
+            main()
+                {
+                    std::cout &lt;&lt; "hola, mundo.";
+                }
+        </code>
+        </pre>
+        <h5>Bash</h5>
+        <!-- Para escribir todo esto de un solo toque es algo así
+pre.lang-bash>code
+Son metodos para escribir todo rapido :-)= -->
+        <pre class="lang-bash"><code>
+            #!/bin/sh
+                echo "Hola Mundo"
+        </code></pre>
+        <h5>Go</h5>
+        <pre class="lang-go"><code>
+            package main
+                import "fmt"
+                func main()
+                    {
+                        fmt.Printf("Hola, Mundo\n")
+                    }
+        </code></pre>
+    </main>
+    <footer>
+        <span>© Copyright 2020 Hard Code</span>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Únete</a>
+        <a href="#">Ir al principio</a>
+    </footer>
+    <script src="prism.js"></script>
 </body>
+
 </html>
