@@ -6,51 +6,61 @@
     <!-- eSTO ES EL CODIGO DE CARACTERES VIENE POR DEFECTO-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- aHORA VOY A INCLUIR LA LIBRERIA, QUE ME VA A PERMITIR RESALTAR CODIGO FUENTE SIN TOCAR NADA MAS QUE CLASES EN LAS TAGS-->
-    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="./assets/prism/prism.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- font Awesomw -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Styles -->
     <!-- Intentar con "./" para las direcciones, por si acaso -->
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <title>Hello World</title>
 </head>
 
 <body>
-    <nav>
-        <h1>Titulo</h1>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Nosotros</a>
-        <a href="#">Únete</a>
-        <a href="#">Ir al final</a>
-    </nav>
+    <header>
+        <h1 class="logo">Hard <span>Code</span></h1>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li>
+                <li><a href="./assets/html/aboutus.html"><i class="fas fa-info site-nav--icon"></i>Sobre Nosotros</a></li>
+                <li><a href="./assets/html/joinus.html"><i class="fas fa-users site-nav--icon"></i>Únete</a></li>
+            </ul>
+        </nav>
+        <div id='menu-toggle' class="menu-toggle" onclick="cambiarClase()">
+            <div class="hamburger">
+
+            </div>
+        </div>
+    </header>
     <main class="container">
         <!-- Pasando el texto a codigo html para representar los caracteres especiales(coma, tildes, comillas, signos etc e incluso emojis tambien) -->
         <h1>El&nbsp;&ldquo;Hola&nbsp;Mundo&rdquo;</h1>
         <!-- Ahora el contenido -->
-        <p dir="ltr"><span>El &ldquo;Hola Mundo&rdquo; (titulo de la pagina principal)</span></p>
-        <p dir="ltr"><span>Cualquier programador, aunque haya comenzado recientemente, se encuentra familiarizado con
-                esta frase, la habr&aacute; utilizado m&uacute;ltiples veces mientras aprend&iacute;a y hasta
-                tendr&aacute;n la costumbre de en cualquier ejemplo que hagan el utilizar estas famosas palabras.</span>
+        <p>El &ldquo;Hola Mundo&rdquo; (titulo de la pagina principal)</p>
+        <p>Cualquier programador, aunque haya comenzado recientemente, se encuentra familiarizado con
+            esta frase, la habr&aacute; utilizado m&uacute;ltiples veces mientras aprend&iacute;a y hasta
+            tendr&aacute;n la costumbre de en cualquier ejemplo que hagan el utilizar estas famosas palabras.
         </p>
-        <p dir="ltr"><span>Siendo el ejemplo por excelencia, nosotros deseamos mostrarte como algo tan simple como una
-                frase se ha ido adaptando a cada tipo de lenguaje y en qu&eacute; forma ha ayudado a millones de
-                trabajadores a lo largo del mundo.</span></p>
+        <p>Siendo el ejemplo por excelencia, nosotros deseamos mostrarte como algo tan simple como una
+            frase se ha ido adaptando a cada tipo de lenguaje y en qu&eacute; forma ha ayudado a millones de
+            trabajadores a lo largo del mundo.</p>
         <h3>El Hola Mundo en los lenguajes de programaci&oacute;n</h3>
-        <p dir="ltr"><span>La frase ha cobrado tanta popularidad hoy en d&iacute;a, que se pueden encontrar en internet
-                m&aacute;s de 441 programas con el resultado de &ldquo;hola mundo&rdquo;, en diversos lenguajes de
-                programaci&oacute;n desde los m&aacute;s famosos hasta varios desconocidos, y ha llegado a traducirse en
-                64 idiomas para estos lenguajes.</span></p>
-        <p><span style="font-weight: 400;">El hola mundo en los distintos Lenguajes de programaci&oacute;n:</span></p>
+        <p>La frase ha cobrado tanta popularidad hoy en d&iacute;a, que se pueden encontrar en internet
+            m&aacute;s de 441 programas con el resultado de &ldquo;hola mundo&rdquo;, en diversos lenguajes de
+            programaci&oacute;n desde los m&aacute;s famosos hasta varios desconocidos, y ha llegado a traducirse en
+            64 idiomas para estos lenguajes.</p>
+        <p>El hola mundo en los distintos Lenguajes de programaci&oacute;n:</p>
         <!-- -------------------------------------------------------------------------------- -->
 
         <!-- Codigo Fuente-->
         <!-- Se usa la tag pre para decirle al browser(navegador) que no lo lea y que es una muestra nada mas -->
         <!-- Y para el formato o la forma en que se va a mostrar es code -->
-        <!-- La librería prism.js nos dice que hay que poner esto nada mas class='lang-xxx' donde xxx es el lenguaje, que tambien lo dice en la pagina,el primero es java, y hay que ponerlo en pre -->
+        <!-- La librería prism.js nos dice que hay que poner esto nada mas class='lang-xxx' donde xxx es el lenguaje, que tambien lo dice en la pagina. El primero es java, y hay que ponerlo en pre -->
         <h5>Java</h5>
-        <pre class="lang-j"><code>
-            java: public class HolaMundo {
+        <pre class="lang-java"><code>
+            public class HolaMundo {
                 &nbsp;&nbsp;&nbsp;public static void main(String[] args) {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hola, Mundo");
                 &nbsp;&nbsp;&nbsp;}
@@ -58,7 +68,7 @@
         </code></pre>
         <h5>Python</h5>
         <pre class="lang-py"><code>
-            python:&nbsp;print&nbsp;"Hola,&nbsp;Mundo&rdquo;&nbsp;
+            print&nbsp;"Hola,&nbsp;Mundo&rdquo;&nbsp;
         </code></pre>
         <h5>Ruby</h5>
         <pre class="lang-ruby"><code>
@@ -101,15 +111,41 @@ Son metodos para escribir todo rapido :-)= -->
                         fmt.Printf("Hola, Mundo\n")
                     }
         </code></pre>
+        <p>&nbsp;</p>
+        <p>Si prestaron atenci&oacute;n&nbsp; podr&aacute;n ver como en muchos de los
+            programas se repite la palabra &ldquo;print&rdquo; que puede llamarse el comando &ldquo;imprimir&rdquo;
+            en espa&ntilde;ol, esto sucede porque el uso m&aacute;s com&uacute;n para la frase Hola Mundo es ser una
+            frase de prueba, que servir&aacute; para comprobar que todo funcione de la manera correcta, tanto el
+            compilador (que tome el c&oacute;digo, lo compile y lo cargue al instrumento a programar) como el
+            instrumento (que tiene que ejecutar de alguna forma el programa cargado, suele ser una consola que
+            muestra el mensaje escrito).</p><br>
+        <h3>&iquest;Pero alguna vez se han preguntado por qu&eacute; esta frase es utilizada?&nbsp;</h3>
+        <p>No hay alguna raz&oacute;n t&eacute;cnica detr&aacute;s del porqu&eacute;,
+            desde hace tiempo se considera m&aacute;s una tradici&oacute;n&nbsp; o costumbre el colocarla en los
+            ejemplos, y al no ser algo de suma importancia a logrado mantenerse.</p>
+        <h3>&iquest;Cu&aacute;l es el origen de esta frase?&nbsp;</h3>
+        <p>Su origen real puede no ser muy claro, si nos guiamos por especulaciones, uno
+            puede encontrar que en 1801 Joseph Marie hizo que un telar programable, e insertando tarjetas perforadas
+            en el telar se le podr&iacute;a instruir para tejer frases espec&iacute;ficas y cuyo primer uso fue la
+            frase tratada hasta ahora.</p>
+        <p>Aunque buscando or&iacute;genes m&aacute;s concretos, en la d&eacute;cada de
+            los setenta, Brian Kernighan introdujo estas palabras como un programa de ejemplo en el libro &ldquo;A
+            tutorial introduction to the programming language B&rdquo;, aunque su popularizaci&oacute;n
+            empez&oacute; durante un seminario del libro &ldquo;The C programming language&rdquo; (nombrando ese
+            famoso lenguaje, estoy seguro que m&aacute;s de uno tendr&aacute; amargos recuerdos con &eacute;l) donde
+            el ejemplo del &ldquo;hello Word&rdquo; se mantuvo como referencia y desde esa &eacute;poca, ha logrado
+            perdurar hasta el d&iacute;a de hoy. </p>
     </main>
+    <br>
     <footer>
         <span>© Copyright 2020 Hard Code</span>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Nosotros</a>
-        <a href="#">Únete</a>
-        <a href="#">Ir al principio</a>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="./assets/html/aboutus.html">Sobre Nosotros</a>
+        <a href="./assets/html/joinus.html">Únete</a>
     </footer>
-    <script src="prism.js"></script>
+    <!-- SCRIPTS -->
+    <script src="./assets/prism/prism.js"></script>
+    <script src="./assets/js/togClass.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- eSTO ES EL CODIGO DE CARACTERES VIENE POR DEFECTO-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- aHORA VOY A INCLUIR LA LIBRERIA, QUE ME VA A PERMITIR RESALTAR CODIGO FUENTE SIN TOCAR NADA MAS QUE CLASES EN LAS TAGS-->
+    <link rel="stylesheet" href="../prism/prism.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- font Awesomw -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Styles -->
+    <!-- Intentar con "./" para las direcciones, por si acaso -->
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Hello World</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Hard <span>Code</span></h1>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="../../index.html"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li>
+                <li><a href="aboutus.html" class="active"><i class="fas fa-info site-nav--icon"></i>Sobre Nosotros</a></li>
+                <li><a href="joinus.html"><i class="fas fa-users site-nav--icon"></i>Únete</a></li>
+            </ul>
+        </nav>
+        <div id='menu-toggle' class="menu-toggle" onclick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Sobre Nosotros</h1>
+        <p>Con el objetivo de dar a conocer nuestro potencial, como estudiantes principiantes en programación, elaboramos Hard Code, una plataforma en la que se encontrarán nuestros proyectos de programación en desarrollo.​</p>
+        <h2 style="text-align: center;">Nuestro Equipo</h2>
+        <section>
+            <div class="card-wrapper">
+                <!-- card -->
+                <div class="card" id="ulises-card">
+                    <div class="card-img"></div>
+                    <img src="../img/ImagenP5.jpg" alt="profile-image" class="profile-img">
+                    <h3>Ulises Apaza</h3>
+                    <p class="job-tittle">Project Manager</p>
+                    <p class="about">
+                        Soy un Desarrollador Web FullStack. Tienes un proyecto en mente...?
+                    </p>
+                    <a href="mailto:ulisesapaza@gmail.com" class="btn" target="_blank">Hablemos</a>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/uli.apaza.71/"><i class="fab fa-facebook-square" target="_blank"></i></a></li>
+                        <li><a href="https://www.instagram.com/apazauli/"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ulises-apaza-1407621aa/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------------------- -->
+                <!-- card -->
+                <!-- NO TOCAR, ES UN EJEMPLO -->
+                <!-- <div class="card">
+                    <img src="../img/Funnamed.jpg" alt="card-background" class="card-img">
+                    Si no se tiene imagen de fondo, usar un div.
+                    Si tenes una imagen subir a la carpeta assets/img, sea fondo o la de perfil.
+                    <div class="img-top"></div>
+                    <img src="../img/ImagenP5.jpg" alt="profile-image" class="profile-img">
+                    <h3>Ulises Apaza</h3>
+                    <p class="job-tittle">Project Manager</p>
+                    <p class="about">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#" class="btn">Contact</a>
+                    <ul class="social-media">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div> -->
+                <!-- ------------------------------------------------------------------------------------------------------------- -->
+            </div>
+            
+        </section>
+    </main>        
+    <br>
+    <footer>
+        <span>© Copyright 2020 Hard Code</span>
+        <a href="../../index.html">Inicio</a>
+        <a href="#" class="active">Sobre Nosotros</a>
+        <a href="joinus.html">Únete</a>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="../prism/prism.js"></script>
+    <script src="../js/togClass.js"></script>
+</body>
+
+</html>
